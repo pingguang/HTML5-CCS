@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/SignUp_SignIn.css">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <title>登录页面</title>
+    <script>
+    
+        function send()
+        {
+            var telephone=  $("#telephone").val();
+            var password =  $("#password").val();
+
+             if(telephone != "admin")   
+             {
+                 $("#info").text("用户名错误");
+             }else if(password != "admin"){
+                 $("#info").text("密码不正确");
+             }else{
+                 window.location = "../page/player.html";
+             }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+     <!-- <form action="/PGLoginWeb/servlet/CheckLogin" method="get"> -->
+         <p id="signUpPage">登录 <a href="../page/SignUp.html" id="signUpPageText">没有账号？立即注册</a></p>
+         <ul>
+            <li> <input type="text" id="telephone" name="telephone" placeholder="请输入您的电话号码"></li>
+            <li> <span></span></li>
+            <li> <input type="password" id="password" name="password" placeholder="请输入您的密码"></li>
+            <li> <span></span></li>
+            <li> <a id="forgetPwd" href="">忘记密码</a></li>
+            <li>  <input type="button" value="登录" id="SignUp" onclick="send()"></li>
+            <li> <p id="info" style="color: red;"></p></li>
+         </ul>
+     <!-- </form> -->
+    </div>
+</body>
+</html>

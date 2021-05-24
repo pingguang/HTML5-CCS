@@ -1,0 +1,77 @@
+body{
+    background-image: url("../img/background.jpg");
+    background-size:cover;
+    text-align: center;
+}
+
+#div1{
+    width: 350px;
+    max-height: 500px;
+    border-radius: 25px;
+    margin: 2px auto;
+    background-color: rgba(231, 225, 225, 0.979);
+}
+
+#div1 li{
+   list-style-type: none;
+   padding-right: 30px;
+}
+
+#telephone,#email,#password,#password2,#checkCode{
+    width: 220px;
+    height: 30px;
+    margin: 10px auto;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    text-indent:32px;
+}
+
+
+
+#signUpPage{
+    font-size: 25px;
+}
+
+#telephone{
+    background-image: url("../img/telephone.png"); 
+}
+
+#email{
+    background-image: url("../img/email.png");
+}
+
+#password,#password2{
+    background-image: url("../img/password.png");
+}
+
+#checkCode{
+	width: 115px;
+    height: 30px;
+    margin-left: 26px;
+    text-indent:0px;
+}
+
+#myli{
+	 text-align: left;
+}
+
+#signUp{
+    width: 80px;
+    height:35px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#signUpPageText
+{
+    font-size: 15px;
+    margin-left: 50px;
+}
+
+#agreeText{
+    font-size: 10px;
+}
+
+#forgetPwd{
+    margin-right: 160px;
+}
